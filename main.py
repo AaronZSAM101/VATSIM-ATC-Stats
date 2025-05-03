@@ -1,6 +1,6 @@
 from GetData import *
 from Calculate import *
-from PersonalData import cid
+from PersonalData import *
 
 def main():
     # 获取当前季度的开始和结束日期
@@ -20,7 +20,7 @@ def main():
     print(f"本分部/vACC的上线时间为: {home_division_hours:.2f} 小时\n其他分部/vACC的上线时间为: {other_hours:.2f} 小时")
 
     # 检查是否符合TVCP要求
-    result = check_tvcp_compliance(home_division_hours, other_hours)
+    result = check_tvcp_compliance(sessions)
     input(result)
 
 if __name__ == "__main__":
