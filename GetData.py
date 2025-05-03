@@ -1,10 +1,7 @@
 from datetime import datetime
+from PersonalData import CALLSIGN_PREFIXES
 import requests
 
-# 各地区的callsign前缀
-CALLSIGN_PREFIXES = {
-    "home_division": ["PRC", "ZB", "ZG", "ZH", "ZJ", "ZL", "ZM", "ZP", "ZS", "ZW", "ZY"]
-}
 
 def get_current_quarter():
     """根据当前日期，返回季度的开始和结束日期"""

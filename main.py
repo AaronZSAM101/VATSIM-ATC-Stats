@@ -1,10 +1,8 @@
-from GetData import get_current_quarter, fetch_sessions_data
-from Calculate import calculate_minutes_per_area, check_tvcp_compliance
+from GetData import *
+from Calculate import *
+from PersonalData import cid
 
 def main():
-    # 获取用户的CID
-    cid = input("请输入您的VATSIM CID: ")
-    
     # 获取当前季度的开始和结束日期
     start_date, end_date = get_current_quarter()
 
